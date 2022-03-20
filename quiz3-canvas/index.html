@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>PacMan</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="200" style="border: 1px solid black;"></canvas>
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+
+        let x = 100;
+        let y = 100;
+
+        function drawPacman() {
+            ctx.beginPath();
+            ctx.arc(x, y, 50, 0.25 * Math.PI, 1.25 * Math.PI, false);
+            ctx.fillStyle = "yellow";
+            ctx.fill();
+            ctx.beginPath();
+            ctx.arc(100, 100, 50, 0.75 * Math.PI, 1.75 * Math.PI, false);
+            ctx.fill();
+        }
+        drawPacman();
+        function drawCircle1() {
+            ctx.beginPath();
+            ctx.arc(x+40,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+        }
+        drawCircle1();
+        function drawCircle2() {
+            ctx.beginPath();
+            ctx.arc(x+80,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+        }
+        drawCircle2();
+        function drawCircle3() {
+            ctx.beginPath();
+            ctx.arc(x+120,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'blue';
+            ctx.fill();
+        }
+        drawCircle3();
+        function drawCircle4() {
+            ctx.beginPath();
+            ctx.arc(x+160,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+        }
+        drawCircle4();
+        function drawCircle5() {
+            ctx.beginPath();
+            ctx.arc(x+200,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+        }
+        drawCircle5();
+        function drawCircle6() {
+            ctx.beginPath();
+            ctx.arc(x+240,y,5,0,2*Math.PI);
+            ctx.fillStyle = 'red';
+            ctx.fill();
+        }
+        drawCircle6();
+     // write code here to draw the shapes.
+    </script>
+</body>
+</html>

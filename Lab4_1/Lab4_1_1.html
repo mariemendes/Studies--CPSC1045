@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab4_1</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        #griddiv {
+            display: grid;
+            margin: auto;
+            width: 50%;
+            height: 500px;
+            grid-template-columns: auto auto;
+        }
+
+        div div {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Lab4_1</h1>
+    <p>You will use event handling to make the following grid interactive.</p>
+    <div id="griddiv">
+        <div id="div1" onclick="changeColour1()" onmouseover="mouseOnColour1()"></div>
+        <div id="div2" onclick="changeColour2()" onmouseover="mouseOnColour2()"></div>
+        <div id="div3" onclick="changeColour3()" onmouseover="mouseOnColour3()"></div>
+        <div id="div4" onclick="changeColour4()" onmouseover="mouseOnColour4()"></div>
+    </div>
+</body>
+<script>
+
+    //DIV1
+    function changeColour1() {
+        let div = document.getElementById("div1");
+        let colourBlue = 'blue';
+        div.style.backgroundColor = colourBlue;
+    }
+    function mouseOnColour1() {
+        let div = document.getElementById("div1");
+        let colourGreen = 'green';
+        div.style.backgroundColor = colourGreen;
+    }
+    //DIV2
+    function changeColour2() {
+        let div = document.getElementById("div2");
+        let colourBlue = 'blue';
+        div.style.backgroundColor = colourBlue;
+    }
+    function mouseOnColour2() {
+        let div = document.getElementById("div2");
+        let colourGreen = 'green';
+        div.style.backgroundColor = colourGreen;
+    }
+    //DIV3
+    function changeColour3() {
+        let div = document.getElementById("div3");
+        let colourBlue = 'blue';
+        div.style.backgroundColor = colourBlue;
+    }
+    function mouseOnColour3() {
+        let div = document.getElementById("div3");
+        let colourGreen = 'green';
+        div.style.backgroundColor = colourGreen;
+    }
+    //DIV4
+    function changeColour4() {
+        let div = document.getElementById("div4");
+        let colourBlue = 'blue';
+        div.style.backgroundColor = colourBlue;
+    }
+    function mouseOnColour4() {
+        let div = document.getElementById("div4");
+        let colourGreen = 'green';
+        div.style.backgroundColor = colourGreen;
+    }
+    //Add the event related attibute to the divisions
+    //Make functions, each function is to respond to a specific event from a certain element.
+</script>
+</html>
